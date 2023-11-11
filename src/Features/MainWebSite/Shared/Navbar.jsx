@@ -19,7 +19,8 @@ const Navbar = () => {
           <FiMenu className="text-2xl block md:hidden" />
         </button>
         <Logo css="text-center md:text-start" />
-        <div className="flex gap-3 justify-end">
+        <div className="flex gap-3 justify-end items-center">
+          <Link to="/create-resume" className="text-lg font-semibold">Resume</Link>
           <Link className="border border-main-v1 py-2 px-4 font-bold text-sm hover:bg-main-v2 transition-all delay-100 duration-300 hidden md:block">
             Log in
           </Link>

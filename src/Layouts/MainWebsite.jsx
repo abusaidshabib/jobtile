@@ -6,8 +6,10 @@ import EventNav from "../Features/MainWebSite/Shared/EventNav";
 const MainWebsite = () => {
   return (
     <div className="font-open">
-      <EventNav />
-      <Navbar />
+      <div className="absolute top-0 w-full">
+        <EventNav />
+        <Navbar />
+      </div>
       <Outlet />
       <Footer />
     </div>
