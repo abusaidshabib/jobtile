@@ -32,12 +32,12 @@ const MainWebRoute = [
           },
         ],
       },
-      {
-        path: "/edit-resume",
-        element: <EditResume />,
-      },
     ],
   },
+  {
+    path: "/edit-resume",
+    element: <EditResume />,
+  }
 ];
 
 export default MainWebRoute;
