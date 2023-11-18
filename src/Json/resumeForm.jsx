@@ -3,14 +3,9 @@ const class2 = "col-span-2";
 
 export const formFields = [
   {
-    name: "jobTitle",
-    label: "Wanted Job Title",
-    type: "text",
-    class: class1,
-  },
-  {
     name: "firstName",
     label: "First Name",
+    place: "Desiree B.",
     type: "text",
     class: class1,
   },
@@ -21,15 +16,33 @@ export const formFields = [
     class: class1,
   },
   {
-    name: "email",
-    label: "Email",
-    type: "email",
+    name: "jobTitle",
+    label: "Wanted Job Title",
+    type: "text",
+    class: class1,
+  },
+  {
+    name: "address1",
+    label: "Address First",
+    type: "text",
+    class: class1,
+  },
+  {
+    name: "address2",
+    label: "Address Second",
+    type: "text",
     class: class1,
   },
   {
     name: "phone",
-    label: "Email",
+    label: "Phone Number",
     type: "tel",
+    class: class1,
+  },
+  {
+    name: "email",
+    label: "Email",
+    type: "email",
     class: class1,
   },
   {
@@ -41,12 +54,6 @@ export const formFields = [
   {
     name: "city",
     label: "City",
-    type: "text",
-    class: class1,
-  },
-  {
-    name: "address",
-    label: "Postal Code",
     type: "text",
     class: class1,
   },
@@ -84,37 +91,37 @@ export const formFields = [
 
 export const experience = [
   {
-    name: "job-title",
+    name: "jobTitle",
     label: "Job Title",
     type: "text",
     class: class1,
   },
   {
-    name: "employer",
-    label: "Employer",
+    name: "company",
+    label: "Company Name",
     type: "text",
     class: class1,
   },
   {
-    name: "start-date",
-    label: "Start Date",
-    type: "date",
-    class: class1,
-  },
-  {
-    name: "end-date",
-    label: "End Date",
-    type: "date",
-    class: class1,
-  },
-  {
-    name: "job-location",
+    name: "jobLocation",
     label: "Job Location",
     type: "text",
     class: class1,
   },
   {
-    name: "job-description",
+    name: "startDate",
+    label: "Start Date",
+    type: "date",
+    class: class1,
+  },
+  {
+    name: "endDate",
+    label: "End Date",
+    type: "text",
+    class: class1,
+  },
+  {
+    name: "jobDescription",
     label: "Job Description",
     class: class2,
   },
@@ -128,27 +135,27 @@ export const education = [
     class: class1,
   },
   {
+    name: "eduLocation",
+    label: "Education Location",
+    type: "text",
+    class: class1,
+  },
+  {
     name: "degree",
     label: "Degree",
     type: "text",
     class: class1,
   },
   {
-    name: "start-date",
+    name: "startDate",
     label: "Start Date",
     type: "date",
     class: class1,
   },
   {
-    name: "end-date",
+    name: "endDate",
     label: "End Date",
     type: "date",
-    class: class1,
-  },
-  {
-    name: "edu-location",
-    label: "Education Location",
-    type: "text",
     class: class1,
   },
   {
@@ -200,36 +207,5 @@ export const Language = [
     label: "Expertise level",
     type: "text",
     class: class1,
-  },
-];
-
-export const resumeTemplates = [
-  {
-    name: "template1",
-    content: "<div>This is the template content {personalData.jobTitle}</div>",
-  },
-  {
-    name: "template2",
-    content:
-      "<div>Another template content {personalData.firstName} {personalData.lastName}</div>",
-  },
-  {
-    name: "template3",
-    content:
-      '<div class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">' +
-      '<a href="#">' +
-      '<h5 class="mb-2 text-5xl font-bold tracking-tight text-gray-900 dark:text-white">' +
-      "{personalData.jobTitle}" +
-      "</h5>" +
-      "</a>" +
-      '<p class="mb-3 font-normal text-gray-700 dark:text-gray-400">' +
-      "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order." +
-      "</p>" +
-      "<a " +
-      'href="#" ' +
-      'class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">' +
-      "Read more" +
-      "</a>" +
-      "</div>",
   },
 ];

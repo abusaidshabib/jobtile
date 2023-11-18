@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlineDeleteOutline } from "react-icons/md";
 import { IoAdd } from "react-icons/io5";
@@ -41,7 +41,9 @@ const EducationAdd = () => {
     });
   };
 
-  dispatch(setEducationData(modifyEducation(formData)));
+  useEffect(() => {
+    dispatch(setEducationData(modifyEducation(formData)));
+  }, [formData, dispatch]);
 
   return (
     <div className="grid gap-8">

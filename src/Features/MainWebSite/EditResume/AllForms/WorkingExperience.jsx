@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlineDeleteOutline } from "react-icons/md";
 import { IoAdd } from "react-icons/io5";
@@ -52,7 +52,10 @@ const WorkingExperience = () => {
       return updatedData;
     });
   };
-  dispatch(setExperience(modifyExperience(formData)));
+
+  useEffect(() => {
+    dispatch(setExperience(modifyExperience(formData)));
+  }, [formData, dispatch]);
 
   return (
     <div className="grid gap-8">

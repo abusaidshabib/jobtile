@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlineDeleteOutline } from "react-icons/md";
 import { IoAdd } from "react-icons/io5";
@@ -41,7 +41,9 @@ const AddLanguage = () => {
     });
   };
 
-  dispatch(setLanguageData(modifyLanguage(formData)));
+  useEffect(() => {
+    dispatch(setLanguageData(modifyLanguage(formData)));
+  }, [formData, dispatch]);
 
   return (
     <div className="grid gap-8">

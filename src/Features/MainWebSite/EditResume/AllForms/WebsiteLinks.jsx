@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { webLinks } from "../../../../Json/resumeForm";
 import { useDispatch } from "react-redux";
@@ -40,7 +40,10 @@ const WebsiteLinks = () => {
       return newData;
     });
   };
-  dispatch(setWebLinks(modifyWebLink(formData)));
+
+  useEffect(() => {
+    dispatch(setWebLinks(modifyWebLink(formData)));
+  }, [formData, dispatch]);
 
   return (
     <div className="grid gap-8">

@@ -41,15 +41,6 @@ const EditResume = () => {
           <EducationAdd />
           <br />
           <br />
-          <p className="text-2xl font-young">Websites & Social Links</p>
-          <p className="pb-5">
-            You can add links to websites you want hiring managers to see!
-            Perhaps It will be a link to your portfolio, LinkedIn profile, or
-            personal website
-          </p>
-          <WebsiteLinks />
-          <br />
-          <br />
           <p className="text-2xl font-young">Skills</p>
           <p className="pb-5">
             Choose 5 important skills that show you fit the position. Make sure
@@ -57,6 +48,15 @@ const EditResume = () => {
             when applying via an online system).
           </p>
           <SkillsAdd />
+          <br />
+          <br />
+          <p className="text-2xl font-young">Websites & Social Links</p>
+          <p className="pb-5">
+            You can add links to websites you want hiring managers to see!
+            Perhaps It will be a link to your portfolio, LinkedIn profile, or
+            personal website
+          </p>
+          <WebsiteLinks />
           <br />
           <br />
           <p className="text-2xl font-young pb-5">Language</p>
